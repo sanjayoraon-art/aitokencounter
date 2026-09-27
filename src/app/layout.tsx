@@ -28,6 +28,9 @@ export const metadata: Metadata = {
     'Multimodal Vision Token Math',
   ],
   authors: [{ name: 'TokenCounter.AI Team' }],
+  verification: {
+    google: '2gjvkpzwR43db5pI7ANax0TAlpI2DbkJ5F3kYDgDmmI',
+  },
   openGraph: {
     title: 'AI Token Counter, Multi-Model Cost Estimator & Prompt Optimizer',
     description: 'Free, lightning-fast client-side AI token counter, LLM cost comparison matrix, and prompt compression engine.',
@@ -57,6 +60,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
     >
+      <head>
+        <meta name="google-site-verification" content="2gjvkpzwR43db5pI7ANax0TAlpI2DbkJ5F3kYDgDmmI" />
+      </head>
       <body className="min-h-full flex flex-col bg-slate-950 text-slate-100 font-sans">
         {children}
       </body>
